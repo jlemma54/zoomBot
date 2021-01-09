@@ -52,10 +52,8 @@ def getInfo():
 
 def formatTime(index):
     temp = getInfo()
-    # print(temp[index][0])
     units = temp[index][0].split("-")
     units2 = [int(float(x)) for x in units]
-    # print(datetime(units2[0], units2[1], units2[2], units2[3], units2[4]))
     product = datetime(units2[0], units2[1], units2[2], units2[3], units2[4])
     product2 = str(product)
     product3 = product2.replace("-", ":").replace(" ", ":")
@@ -88,8 +86,3 @@ while True:
     if currentTime == formatTime(counter):
         sign_in(getID(), getPswd())
         counter += 1
-
-# currentTime = datetime.now().strftime("%Y:%m:%d:%H:%M:%S")
-# print(currentTime)
-# print(formatTime(1))
-
