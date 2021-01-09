@@ -65,14 +65,6 @@ def getPswd(counter):
     return data[counter][2]
 
 
-
-
-sign_in("942 743 3679", "")
-currentTime = datetime.now().strftime("%Y:%m:%d:%H:%M:%S")
-print(currentTime)
-getInfo()
-formatTime(2)
-
 counter = 1
 
 global data
