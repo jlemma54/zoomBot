@@ -47,7 +47,6 @@ def getInfo():
     file1 = open('logs.txt', 'r')
     Lines = file1.readlines()
     lineformated = [x.split(",") for x in Lines]
-    # print(lineformated)
     return lineformated
 
 def formatTime(index):
