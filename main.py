@@ -6,7 +6,7 @@ from datetime import datetime
 
 def sign_in(meetingid, pswd):
     # open zoom meeting
-    subprocess.call(r"C:\Users\USER\AppData\Roaming\Zoom\bin\Zoom.exe")
+    subprocess.call(r"C:\Users\jlemm\AppData\Roaming\Zoom\bin\Zoom.exe")
 
     time.sleep(4)
 
@@ -75,5 +75,5 @@ while True:
         break
     currentTime = datetime.now().strftime("%Y:%m:%d:%H:%M:%S")
     if currentTime == formatTime(counter):
-        sign_in(getID(), getPswd())
+        sign_in(getID(counter=counter), getPswd(counter=counter))
         counter += 1
