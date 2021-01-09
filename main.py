@@ -6,7 +6,7 @@ from datetime import datetime
 
 def sign_in(meetingid, pswd):
     # open zoom meeting
-    subprocess.call(r"C:\Users\jlemm\AppData\Roaming\Zoom\bin\Zoom.exe")
+    subprocess.call(r"C:\Users\USER\AppData\Roaming\Zoom\bin\Zoom.exe")
 
     time.sleep(4)
 
