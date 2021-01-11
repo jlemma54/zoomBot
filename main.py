@@ -1,3 +1,8 @@
+# Author: Johnathan Lemma
+# This software is free by all definitions of "free". You may modify/copy the
+# source code to how you see fit for any purpose whatsoever. No attribution
+# to the original author is required.
+
 import subprocess
 import pyautogui
 import time
